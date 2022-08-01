@@ -5,6 +5,11 @@ trigger:
     include:
       - main
 
+pool:
+  name: BIMO
+  demands::
+    - agent.name --equals 'bimo'
+
 variables:
   ImageName: 'vagnerferraz/unyleya_projeto_cicd_vagner:$(Build.BuildId)'
 
