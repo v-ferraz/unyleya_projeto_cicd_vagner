@@ -6,9 +6,7 @@ trigger:
       - main
 
 pool:
-  name: BIMO
-  demands::
-    - agent.name --equals 'bimo'
+  name: Default
 
 variables:
   ImageName: 'vagnerferraz/unyleya_projeto_cicd_vagner:$(Build.BuildId)'
