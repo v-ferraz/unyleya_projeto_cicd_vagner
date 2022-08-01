@@ -6,7 +6,7 @@ trigger:
       - main
 
 pool:
-  name: Default
+  name: 'Azure Pipelines'
 
 variables:
   ImageName: 'vagnerferraz/unyleya_projeto_cicd_vagner:$(Build.BuildId)'
